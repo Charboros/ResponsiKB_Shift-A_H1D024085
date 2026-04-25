@@ -5,7 +5,6 @@ Proyek ini dibuat untuk memenuhi tugas **Responsi Praktikum Kecerdasan Buatan**.
 ## 📂 Struktur Proyek
 - `fuzzy_system.py`: Implementasi Sistem Logika Fuzzy untuk penilaian kualitas numerik.
 - `expert_system.py`: Implementasi Sistem Pakar untuk diagnosis keamanan pangan sensorik.
-- `requirements.txt`: Daftar dependensi Python yang diperlukan.
 
 ## 🚀 Cara Menjalankan
 1. Clone repositori ini:
@@ -14,7 +13,7 @@ Proyek ini dibuat untuk memenuhi tugas **Responsi Praktikum Kecerdasan Buatan**.
    ```
 2. Instal dependensi:
    ```bash
-   pip install -r requirements.txt
+   pip install streamlit scikit-fuzzy numpy matplotlib
    ```
 3. Jalankan salah satu sistem menggunakan Streamlit:
    ```bash

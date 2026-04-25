@@ -108,9 +108,9 @@ col1, col2 = st.columns([1, 1.2])
 
 with col1:
     st.subheader("📊 Input Parameter")
-    val_kesegaran = st.slider("Tingkat Kesegaran (Aroma & Tekstur)", 0, 10, 7)
-    val_nutrisi = st.slider("Kandungan Nutrisi (Kelengkapan Lauk)", 0, 10, 8)
-    val_kebersihan = st.slider("Kebersihan Penyajian (Wadah & Proses)", 0, 10, 9)
+    val_kesegaran = st.slider("Tingkat Kesegaran (Aroma & Tekstur)", 0, 10, 6)
+    val_nutrisi = st.slider("Kandungan Nutrisi (Kelengkapan Lauk)", 0, 10, 4)
+    val_kebersihan = st.slider("Kebersihan Penyajian (Wadah & Proses)", 0, 10, 7)
 
     st.info("💡 Geser slider untuk menyesuaikan kondisi makanan yang diamati.")
 
@@ -147,8 +147,14 @@ with col2:
     """, unsafe_allow_html=True)
 
     with st.expander("📈 Lihat Grafik Logika Fuzzy"):
-        fig, ax = plt.subplots(figsize=(8, 3))
-        kualitas.view(sim=kualitas_sim, ax=ax)
+        fig, ax = plt.subplots(figsize=(10, 4))
+        for label in kualitas.terms:
+            ax.plot(kualitas.universe, kualitas[label].mf, label=label, linewidth=2)
+        ax.axvline(x=skor_kualitas, color='red', linestyle='--', label=f'Skor: {skor_kualitas:.1f}')
+        ax.set_title('Distribusi Kualitas Makanan (Logika Fuzzy)')
+        ax.set_xlabel('Skor (0-100)')
+        ax.set_ylabel('Derajat Keanggotaan')
+        ax.legend()
         st.pyplot(fig)
 
 st.markdown("---")

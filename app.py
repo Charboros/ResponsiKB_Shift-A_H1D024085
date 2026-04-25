@@ -68,4 +68,4 @@ st.markdown("""
 st.info("👈 Pilih menu di samping untuk memulai analisis.")
 
 st.markdown("---")
-st.caption("Responsi Praktikum KB - Shift A - H1D024085 © 2026")
+st.caption("Responsi Praktikum KB - Afkar Aufaa Farros (H1D024085) - Shift A © 2026")

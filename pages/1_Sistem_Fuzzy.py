@@ -158,4 +158,4 @@ with col2:
         st.pyplot(fig)
 
 st.markdown("---")
-st.caption("Responsi Praktikum KB - MBG System © 2026")
+st.caption("Responsi Praktikum KB - Afkar Aufaa Farros (H1D024085) - Shift A © 2026")

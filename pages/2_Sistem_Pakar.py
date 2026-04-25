@@ -157,4 +157,4 @@ with st.container():
     st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("---")
-st.caption("Responsi Praktikum KB - MBG Expert System © 2026")
+st.caption("Responsi Praktikum KB - Afkar Aufaa Farros (H1D024085) - Shift A © 2026")

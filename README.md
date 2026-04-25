@@ -27,6 +27,6 @@ Proyek ini dibuat untuk memenuhi tugas **Responsi Praktikum Kecerdasan Buatan**.
 
 ---
 **Dibuat oleh:**
-- **Nama**: [Nama Anda]
+- **Nama**: Afkar Aufaa Farros
 - **NIM**: H1D024085
 - **Shift**: A

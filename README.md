@@ -3,8 +3,9 @@
 Proyek ini dibuat untuk memenuhi tugas **Responsi Praktikum Kecerdasan Buatan**. Sistem ini dirancang untuk memantau dan mengevaluasi kualitas makanan dalam program **Makan Bergizi Gratis (MBG)** menggunakan dua pendekatan Kecerdasan Buatan yang berbeda.
 
 ## 📂 Struktur Proyek
-- `fuzzy_system.py`: Implementasi Sistem Logika Fuzzy untuk penilaian kualitas numerik.
-- `expert_system.py`: Implementasi Sistem Pakar untuk diagnosis keamanan pangan sensorik.
+- `app.py`: Halaman utama (Portal MBG).
+- `pages/`: Direktori sistem (Fuzzy & Pakar).
+- `requirements.txt`: (Wajib ada untuk Deployment Cloud).
 
 ## 🚀 Cara Menjalankan
 1. Clone repositori ini:
@@ -15,11 +16,9 @@ Proyek ini dibuat untuk memenuhi tugas **Responsi Praktikum Kecerdasan Buatan**.
    ```bash
    pip install streamlit scikit-fuzzy numpy matplotlib
    ```
-3. Jalankan salah satu sistem menggunakan Streamlit:
+3. Jalankan aplikasi utama:
    ```bash
-   streamlit run fuzzy_system.py
-   # ATAU
-   streamlit run expert_system.py
+   streamlit run app.py
    ```
 
 ## 📖 Dokumentasi Detail
